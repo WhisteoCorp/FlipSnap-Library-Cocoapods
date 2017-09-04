@@ -7,9 +7,13 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'FlipSnap'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FlipSnap.'
+s.name             = 'FlipSnap'
+s.version          = '0.1.0'
+s.platform         = :ios
+s.ios.deployment_target = '11.0'
+s.preserve_paths = 'FlipSnap/**/*.*'
+s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
+s.summary          = 'An image processing library for real time video effects called FlipSnap.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +21,28 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.description      = <<-DESC
+FlipSnap is a framework for implementing algorithmic real time video effects for iOS. It's written in Objective C so it can be implmeneted on both the Swift and Objective C platforms. Video effects are currently video and image compositing through Depth and Color Spatial analysis.
+DESC
 
-  s.homepage         = 'https://github.com/robnewport/FlipSnap'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'robnewport' => 'robnewport@gmail.com' }
-  s.source           = { :git => 'https://github.com/robnewport/FlipSnap.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.homepage         = 'https://github.com/WhisteoCorp/FlipSnap-Library-Cocoapods'
+# s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'robnewport' => 'rob@flipsnap.me' }
+s.source           = { :git => 'https://github.com/WhisteoCorp/FlipSnap-Library-Cocoapods.git', :tag => s.version.to_s }
+# s.social_media_url = 'https://twitter.com/flipsnapapp'
 
-  s.ios.deployment_target = '8.0'
 
-  s.source_files = 'FlipSnap/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'FlipSnap' => ['FlipSnap/Assets/*.png']
-  # }
+s.ios.library = 'z'
+s.vendored_libraries = 'FlipSnap/libFlipSnapLibrary.a'
+s.source_files = 'FlipSnap/Classes/**/*'
+s.public_header_files = 'FlipSnap/Classes/FSCamViewController.h'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+s.resource_bundles = {
+'FlipSnap' => ['FlipSnap/Assets/*.jpg']
+}
+
+s.public_header_files = 'FlipSnap/Classes/*.h'
+s.frameworks = 'UIKit'
+# s.dependency 'AFNetworking', '~> 2.3'
 end

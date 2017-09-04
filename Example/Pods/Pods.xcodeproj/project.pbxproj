@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		027D19286B16DC16994EBFC35968CAB8 /* FlipSnap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 257A363C03F8D73A431B4699DD7D37B6 /* FlipSnap-dummy.m */; };
 		0D128D41C58A28158CB4F5AD292075D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8CCAE6D63AA1D1E3BB3BB9A86E077729 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1F8DD25692C52A947BF14F3FAA4E4D /* ReplaceMe.m */; };
 		BE06F96ED1C02BC2FC62D7CA0692FD0A /* FlipSnap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3113945ED93D70528325DA23F2A5E5C1 /* FlipSnap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D6CDA2AF6F4A98CEAA8391319FF4691F /* Pods-FlipSnap_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 309E2F1481E466961B4419B6EEFFFC5B /* Pods-FlipSnap_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF2C4FB450B71F84591EFA1D3C6D871E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F53D2177190BE29953110173D771C193 /* Pods-FlipSnap_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC8BA2F95BAC0CC872F2A9D6017FF1 /* Pods-FlipSnap_Tests-dummy.m */; };
+		FE4F7A8F1F5CF71F00372820 /* FSCamViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = FE4F7A8E1F5CF71F00372820 /* FSCamViewController.h */; };
+		FE4F7A911F5CF72800372820 /* libFlipSnapLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE4F7A901F5CF72800372820 /* libFlipSnapLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,27 +28,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1886D719E72078A5762802E4287B8CC1 /* Pods-FlipSnap_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FlipSnap_Tests.modulemap"; sourceTree = "<group>"; };
+		1886D719E72078A5762802E4287B8CC1 /* Pods-FlipSnap_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FlipSnap_Tests.modulemap"; sourceTree = "<group>"; };
 		257A363C03F8D73A431B4699DD7D37B6 /* FlipSnap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlipSnap-dummy.m"; sourceTree = "<group>"; };
 		309E2F1481E466961B4419B6EEFFFC5B /* Pods-FlipSnap_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlipSnap_Tests-umbrella.h"; sourceTree = "<group>"; };
 		3113945ED93D70528325DA23F2A5E5C1 /* FlipSnap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlipSnap-umbrella.h"; sourceTree = "<group>"; };
-		3282C52DDF0A71C9BF36DB055E12A061 /* Pods_FlipSnap_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlipSnap_Tests.framework; path = "Pods-FlipSnap_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3282C52DDF0A71C9BF36DB055E12A061 /* Pods_FlipSnap_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlipSnap_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3876B81F768CC8D39980A4294F2D0E2A /* FlipSnap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlipSnap-prefix.pch"; sourceTree = "<group>"; };
 		3EBC8BA2F95BAC0CC872F2A9D6017FF1 /* Pods-FlipSnap_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlipSnap_Tests-dummy.m"; sourceTree = "<group>"; };
 		59E8F6F8639F72205534F9A8AAC8E0CB /* Pods-FlipSnap_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlipSnap_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5A56021BCF773126320D628C14204065 /* Pods-FlipSnap_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlipSnap_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		63AC7DABF581F6D84C62BE2E259ED806 /* FlipSnap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FlipSnap.modulemap; sourceTree = "<group>"; };
+		63AC7DABF581F6D84C62BE2E259ED806 /* FlipSnap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FlipSnap.modulemap; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		691EE8D4176F53F3697B56F5ACC1E0BC /* FlipSnap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlipSnap.xcconfig; sourceTree = "<group>"; };
 		6FC0741E3C4833957E4C89FD7AE19D44 /* Pods-FlipSnap_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlipSnap_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		70462FE89EAFD897BC1F376B41C422BB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75F0C867EC947EF95309367BEBBAD6E4 /* Pods-FlipSnap_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlipSnap_Tests-resources.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC1F8DD25692C52A947BF14F3FAA4E4D /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C6557ACE0700E7FF77CDCC63C00B32F9 /* Pods-FlipSnap_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlipSnap_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		CB2498F6F8145810C7208878EA13D033 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E9A86218A77BB00D36B5A436916D7A3E /* FlipSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlipSnap.framework; path = FlipSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9A86218A77BB00D36B5A436916D7A3E /* FlipSnap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlipSnap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F671B326593BA98C2825A28BB788795C /* Pods-FlipSnap_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlipSnap_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE4F7A8E1F5CF71F00372820 /* FSCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCamViewController.h; sourceTree = "<group>"; };
+		FE4F7A901F5CF72800372820 /* libFlipSnapLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlipSnapLibrary.a; sourceTree = "<group>"; };
+		FE4F7A941F5CF73400372820 /* checkers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkers.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4F7A911F5CF72800372820 /* libFlipSnapLibrary.a in Frameworks */,
 				DF2C4FB450B71F84591EFA1D3C6D871E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,9 +146,10 @@
 		B5516A58D4A20CC3844BC749B247AF2C /* FlipSnap */ = {
 			isa = PBXGroup;
 			children = (
+				FE4F7A901F5CF72800372820 /* libFlipSnapLibrary.a */,
+				FE4F7A921F5CF73400372820 /* Assets */,
 				DFC150288FA581985C38885E649AC399 /* Classes */,
 			);
-			name = FlipSnap;
 			path = FlipSnap;
 			sourceTree = "<group>";
 		};
@@ -176,10 +181,17 @@
 		DFC150288FA581985C38885E649AC399 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				AC1F8DD25692C52A947BF14F3FAA4E4D /* ReplaceMe.m */,
+				FE4F7A8E1F5CF71F00372820 /* FSCamViewController.h */,
 			);
-			name = Classes;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		FE4F7A921F5CF73400372820 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FE4F7A941F5CF73400372820 /* checkers.jpg */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +209,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4F7A8F1F5CF71F00372820 /* FSCamViewController.h in Headers */,
 				BE06F96ED1C02BC2FC62D7CA0692FD0A /* FlipSnap-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +285,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				027D19286B16DC16994EBFC35968CAB8 /* FlipSnap-dummy.m in Sources */,
-				8CCAE6D63AA1D1E3BB3BB9A86E077729 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
