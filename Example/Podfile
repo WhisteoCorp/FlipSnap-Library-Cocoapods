@@ -1,0 +1,6 @@
+use_frameworks!
+target 'FlipSnap_Tests' do
+  pod 'FlipSnap', :path => '../'
+  
+  
+end
