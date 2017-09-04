@@ -30,10 +30,10 @@ s.homepage         = 'https://github.com/WhisteoCorp/FlipSnap-Library-Cocoapods'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'robnewport' => 'rob@flipsnap.me' }
 s.source           = { :git => 'https://github.com/WhisteoCorp/FlipSnap-Library-Cocoapods.git', :tag => s.version.to_s }
-# s.social_media_url = 'https://twitter.com/flipsnapapp'
+s.social_media_url = 'https://twitter.com/flipsnapapp'
 
 
-s.ios.library = 'z'
+#s.ios.library = 'z'
 s.vendored_libraries = 'FlipSnap/libFlipSnapLibrary.a'
 s.source_files = 'FlipSnap/Classes/**/*'
 s.public_header_files = 'FlipSnap/Classes/FSCamViewController.h'
