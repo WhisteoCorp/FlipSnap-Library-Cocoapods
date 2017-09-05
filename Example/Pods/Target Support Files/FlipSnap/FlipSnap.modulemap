@@ -1,6 +1,0 @@
-framework module FlipSnap {
-  umbrella header "FlipSnap-umbrella.h"
-
-  export *
-  module * { export * }
-}
