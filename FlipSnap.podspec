@@ -33,9 +33,8 @@ s.source           = { :git => 'https://github.com/WhisteoCorp/FlipSnap-Library-
 s.social_media_url = 'https://twitter.com/flipsnapapp'
 
 
-#s.ios.library = 'z'
-s.vendored_libraries = 'FlipSnap/libFlipSnapLibrary.a'
 s.source_files = 'FlipSnap/Classes/**/*'
+s.vendored_libraries = 'FlipSnap/libFlipSnapLibrary.a'
 s.public_header_files = 'FlipSnap/Classes/FSCamViewController.h'
 
 s.resource_bundles = {
@@ -44,5 +43,4 @@ s.resource_bundles = {
 
 s.public_header_files = 'FlipSnap/Classes/*.h'
 s.frameworks = 'UIKit'
-# s.dependency 'AFNetworking', '~> 2.3'
 end
