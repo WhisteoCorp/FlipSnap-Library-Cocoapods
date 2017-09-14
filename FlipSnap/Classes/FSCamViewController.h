@@ -11,17 +11,28 @@
 
 @interface FSCamViewController : UIViewController
 
+// User Interface Objects
 @property(nonatomic, strong) IBOutlet UISlider *toleranceSlider;
 @property(nonatomic, strong) IBOutlet UIView *swatch;
-@property(assign) BOOL recording;
 
+// User Interface Actions
 -(IBAction)toggleRecording:(id)sender;
 -(IBAction)sliderTolerance:(id)sender;
 -(IBAction)depthOn:(UISwitch *)depthSwitch;
 -(IBAction)resetColors:(id)sender;
 -(IBAction)switchCamera:(id)sender;
 
--(void)updateAlgorithmTop:(NSString *)top bottom:(NSString *)bottom;
+// Status and Descriptions
+@property(assign) BOOL recording;
+@property(nonatomic, readonly, getter=framerate) float framerate;
+
+// Algorithm Management
+-(void)loadAlgorithm:(NSString *)algorithmString;
+-(NSString *)algorithmDescription;
+-(NSString *)algorithmName;
+-(NSString *)algorithmExpiration;
+
+// Video Management
 -(void)extractVideoURL:(NSURL *)url;
 -(void)clearTempDirectory;
 -(void)recordingStoppedForMovieAtURL:(NSURL *)url;
