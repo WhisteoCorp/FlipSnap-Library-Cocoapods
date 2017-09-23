@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'FlipSnap'
-s.version          = '0.1.4'
+s.version          = '0.1.5'
 s.platform         = :ios
 s.ios.deployment_target = '11.0'
 s.preserve_paths = 'FlipSnap/**/*.*'
@@ -38,7 +38,7 @@ s.vendored_libraries = 'FlipSnap/libFlipSnapLibrary.a'
 s.public_header_files = 'FlipSnap/Classes/FSCamViewController.h'
 
 s.resource_bundles = {
-'FlipSnap' => ['FlipSnap/Assets/*.jpg']
+'FlipSnap' => ['FlipSnap/Assets/*.jpg','FlipSnap/Assets/*.png']
 }
 
 s.public_header_files = 'FlipSnap/Classes/*.h'

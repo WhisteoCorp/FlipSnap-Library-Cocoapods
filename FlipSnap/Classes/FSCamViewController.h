@@ -21,6 +21,7 @@
 -(IBAction)depthOn:(UISwitch *)depthSwitch;
 -(IBAction)resetColors:(id)sender;
 -(IBAction)switchCamera:(id)sender;
+-(IBAction)flipMask:(id)sender;
 
 // Status and Descriptions
 @property(assign) BOOL recording;
@@ -31,9 +32,12 @@
 -(NSString *)algorithmDescription;
 -(NSString *)algorithmName;
 -(NSString *)algorithmExpiration;
+-(void)setBlendmode:(float)mode;
+-(void)setSaturation:(float)amount;
 
 // Video Management
 -(void)extractVideoURL:(NSURL *)url;
+-(void)extractPictureURL:(NSURL *)url;
 -(void)clearTempDirectory;
 -(void)recordingStoppedForMovieAtURL:(NSURL *)url;
 
