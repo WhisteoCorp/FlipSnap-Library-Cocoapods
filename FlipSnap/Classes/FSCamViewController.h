@@ -21,7 +21,6 @@
 -(IBAction)depthOn:(UISwitch *)depthSwitch;
 -(IBAction)resetColors:(id)sender;
 -(IBAction)switchCamera:(id)sender;
--(IBAction)flipMask:(id)sender;
 
 // Status and Descriptions
 @property(assign) BOOL recording;
@@ -40,5 +39,6 @@
 -(void)extractPictureURL:(NSURL *)url;
 -(void)clearTempDirectory;
 -(void)recordingStoppedForMovieAtURL:(NSURL *)url;
+-(void)invertBackground:(bool)invert;
 
 @end
