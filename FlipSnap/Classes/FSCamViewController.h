@@ -16,7 +16,6 @@
 @property(nonatomic, strong) IBOutlet UIView *swatch;
 
 // User Interface Actions
--(IBAction)toggleRecording:(id)sender;
 -(IBAction)sliderTolerance:(id)sender;
 -(IBAction)depthOn:(UISwitch *)depthSwitch;
 -(IBAction)resetColors:(id)sender;
@@ -40,5 +39,7 @@
 -(void)clearTempDirectory;
 -(void)recordingStoppedForMovieAtURL:(NSURL *)url;
 -(void)invertBackground:(bool)invert;
+-(void)startRecording;
+-(void)stopRecording;
 
 @end
