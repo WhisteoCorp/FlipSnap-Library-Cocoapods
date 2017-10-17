@@ -19,7 +19,7 @@
 -(IBAction)sliderTolerance:(id)sender;
 -(IBAction)depthOn:(UISwitch *)depthSwitch;
 -(IBAction)resetColors:(id)sender;
--(IBAction)switchCamera:(id)sender;
+
 
 // Status and Descriptions
 @property(assign) BOOL recording;
@@ -41,5 +41,7 @@
 -(void)invertBackground:(bool)invert;
 -(void)startRecording;
 -(void)stopRecording;
+-(void)frontCameraWithCompletion:(void(^)(void))doneSwitching;
+-(void)backCameraWithCompletion:(void(^)(void))doneSwitching;
 
 @end
