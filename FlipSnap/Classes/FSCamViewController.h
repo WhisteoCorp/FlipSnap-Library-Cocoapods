@@ -44,4 +44,6 @@
 -(void)frontCameraWithCompletion:(void(^)(void))doneSwitching;
 -(void)backCameraWithCompletion:(void(^)(void))doneSwitching;
 
+@property(nonatomic, retain) NSString *videoSessionPreset;
+
 @end
