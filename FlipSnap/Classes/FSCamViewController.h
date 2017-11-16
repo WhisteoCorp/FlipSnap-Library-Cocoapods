@@ -35,6 +35,7 @@
 
 // Video Management
 -(void)extractVideoURL:(NSURL *)url;
+-(void)extractVideoURL:(NSURL *)url forSize:(CGSize)size;
 -(void)extractPictureURL:(NSURL *)url;
 -(void)clearTempDirectory;
 -(void)recordingStoppedForMovieAtURL:(NSURL *)url;
@@ -43,7 +44,9 @@
 -(void)stopRecording;
 -(void)frontCameraWithCompletion:(void(^)(void))doneSwitching;
 -(void)backCameraWithCompletion:(void(^)(void))doneSwitching;
+-(void)rotateBackground;
 
 @property(nonatomic, retain) NSString *videoSessionPreset;
+@property(assign) int maximumFramesImported;
 
 @end
