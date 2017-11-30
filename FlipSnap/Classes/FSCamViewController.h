@@ -34,8 +34,8 @@
 -(void)setSaturation:(float)amount;
 
 // Video Management
--(void)extractVideoURL:(NSURL *)url;
--(void)extractVideoURL:(NSURL *)url forSize:(CGSize)size;
+-(void)extractVideoURL:(NSURL *)url withCompletion:(void(^)(void))doneImporting;
+-(void)extractVideoURL:(NSURL *)url forSize:(CGSize)size withCompletion:(void(^)(void))doneImporting;
 -(void)extractPictureURL:(NSURL *)url;
 -(void)clearTempDirectory;
 -(void)recordingStoppedForMovieAtURL:(NSURL *)url;
@@ -44,7 +44,7 @@
 -(void)stopRecording;
 -(void)frontCameraWithCompletion:(void(^)(void))doneSwitching;
 -(void)backCameraWithCompletion:(void(^)(void))doneSwitching;
--(void)rotateBackground;
+-(void)rotateBackgroundWithCompletion:(void(^)(void))doneRotating;
 
 @property(nonatomic, retain) NSString *videoSessionPreset;
 @property(assign) int maximumFramesImported;
