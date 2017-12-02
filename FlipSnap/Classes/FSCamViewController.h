@@ -45,6 +45,7 @@
 -(void)frontCameraWithCompletion:(void(^)(void))doneSwitching;
 -(void)backCameraWithCompletion:(void(^)(void))doneSwitching;
 -(void)rotateBackgroundWithCompletion:(void(^)(void))doneRotating;
+-(void)startPictureWithCompletion:(void(^)(UIImage *))imageTaken;
 
 @property(nonatomic, retain) NSString *videoSessionPreset;
 @property(assign) int maximumFramesImported;
