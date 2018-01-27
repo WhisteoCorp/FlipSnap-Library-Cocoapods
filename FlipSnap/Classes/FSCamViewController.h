@@ -17,7 +17,6 @@
 
 // User Interface Actions
 -(IBAction)sliderTolerance:(id)sender;
--(IBAction)depthOn:(UISwitch *)depthSwitch;
 -(IBAction)resetColors:(id)sender;
 
 
@@ -44,8 +43,14 @@
 -(void)stopRecording;
 -(void)frontCameraWithCompletion:(void(^)(void))doneSwitching;
 -(void)backCameraWithCompletion:(void(^)(void))doneSwitching;
+
+-(void)frontDepthCameraWithCompletion:(void(^)(void))doneSwitching;
+-(void)backDepthCameraWithCompletion:(void(^)(void))doneSwitching;
+
 -(void)rotateBackgroundWithCompletion:(void(^)(void))doneRotating;
 -(void)startPictureWithCompletion:(void(^)(UIImage *))imageTaken;
+-(void)depthOn:(BOOL)isOn;
+
 
 @property(nonatomic, retain) NSString *videoSessionPreset;
 @property(assign) int maximumFramesImported;
