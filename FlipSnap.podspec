@@ -8,9 +8,9 @@
 
 Pod::Spec.new do |s|
 s.name             = 'FlipSnap'
-s.version          = '0.2.5'
+s.version          = '0.2.6'
 s.platform         = :ios
-s.ios.deployment_target = '11.0'
+s.ios.deployment_target = '11.1'
 s.preserve_paths = 'FlipSnap/**/*.*'
 s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
 s.summary          = 'An image processing library for real time video effects called FlipSnap.'
