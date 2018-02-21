@@ -50,7 +50,7 @@
 -(void)rotateBackgroundWithCompletion:(void(^)(void))doneRotating;
 -(void)startPictureWithCompletion:(void(^)(UIImage *))imageTaken;
 -(void)depthOn:(BOOL)isOn;
-
+-(void)depthFiltered:(BOOL)isFiltered;
 
 @property(nonatomic, retain) NSString *videoSessionPreset;
 @property(assign) int maximumFramesImported;
