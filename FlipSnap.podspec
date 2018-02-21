@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'FlipSnap'
-s.version          = '0.2.6'
+s.version          = '0.2.7'
 s.platform         = :ios
 s.ios.deployment_target = '11.1'
 s.preserve_paths = 'FlipSnap/**/*.*'
