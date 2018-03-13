@@ -12,11 +12,11 @@
 @interface FSCamViewController : UIViewController
 
 // User Interface Objects
-@property(nonatomic, strong) IBOutlet UISlider *toleranceSlider;
+//@property(nonatomic, strong) IBOutlet UISlider *toleranceSlider;
 @property(nonatomic, strong) IBOutlet UIView *swatch;
 
 // User Interface Actions
--(IBAction)sliderTolerance:(id)sender;
+//-(IBAction)sliderTolerance:(id)sender;
 -(IBAction)resetColors:(id)sender;
 
 
@@ -51,6 +51,7 @@
 -(void)startPictureWithCompletion:(void(^)(UIImage *))imageTaken;
 -(void)depthOn:(BOOL)isOn;
 -(void)depthFiltered:(BOOL)isFiltered;
+-(void)toleranceSettingForHue:(float)hue saturation:(float)saturation vibrance:(float)vibrance;
 
 @property(nonatomic, retain) NSString *videoSessionPreset;
 @property(assign) int maximumFramesImported;
